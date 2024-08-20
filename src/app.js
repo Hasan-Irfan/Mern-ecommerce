@@ -20,6 +20,6 @@ import productRouter from './routes/productRoutes.js';
 import userRouter from './routes/userRoutes.js';
 
 //routes declaration
-app.use('/products',productRouter);
-app.use('/users',userRouter);
+app.use('/main',productRouter);
+app.use('/main',userRouter);
  
