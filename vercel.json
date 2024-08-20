@@ -12,11 +12,20 @@
     "routes": [
     {
       "src": "/main/products/(.*)",
-      "dest": "/src/app.js"
+      "dest": "index.js"
     },
     {
+      "src": "/main/products",
+      "dest": "index.js"
+    },
+    {
+      "src": "/main/cart",
+      "dest": "index.js"
+    },
+    {
+      
       "src": "/main/cart/(.*)",
-      "dest": "/src/app.js"
+      "dest": "index.js"
     },
     {
       "src": "/",
