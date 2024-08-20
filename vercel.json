@@ -11,12 +11,16 @@
     ],
     "routes": [
     {
-      "src": "/main/(.*)",
+      "src": "/main/products/(.*)",
+      "dest": "/src/app.js"
+    },
+    {
+      "src": "/main/cart/(.*)",
       "dest": "/src/app.js"
     },
     {
       "src": "/(.*)",
-      "dest": "/src/app.js"
+      "dest": "build/"
     }
   ]
   }
