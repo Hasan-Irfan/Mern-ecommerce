@@ -10,7 +10,7 @@ dotenv.config({
 export const app = express();
 
 app.use(cors());
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json({limit: '16kb'}));
 app.use(express.static(process.env.PUBLIC_DIR));
 app.use(cookieParser());
@@ -20,6 +20,6 @@ import productRouter from './routes/productRoutes.js';
 import userRouter from './routes/userRoutes.js';
 
 //routes declaration
-app.use('/main',productRouter);
-app.use('/main',userRouter);
+app.use('/products',productRouter);
+app.use('/users',userRouter);
  
