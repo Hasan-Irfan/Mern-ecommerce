@@ -24,6 +24,10 @@
       "dest": "/build/index.html"
     },
     {
+      "src": "/main",
+      "dest": "/build/index.html"
+    },
+    {
       "src": "/(.+)",
       "dest": "build/$1"
     }
